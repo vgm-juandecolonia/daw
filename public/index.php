@@ -1,3 +1,9 @@
+<?php
+    require_once dirname(__DIR__) . "/src/Controllers/ClassificationController.php";
+
+    use Controllers\ClassificationController;
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -39,7 +45,8 @@
     <main class="container">
         <h2>Clasificación</h2>
         <?php
-            require_once("./controllers/classificationController.php");
+            $controller = new ClassificationController();
+            $controller->showClassification();
         ?>
     </main>
 
