@@ -1,9 +1,3 @@
-<?php
-    require_once dirname(__DIR__) . "/src/Controllers/ClassificationController.php";
-
-    use Controllers\ClassificationController;
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
@@ -45,8 +39,7 @@
     <main class="container">
         <h2>Clasificación</h2>
         <?php
-            $controller = new ClassificationController();
-            $controller->showClassification();
+            require_once("./src/controllers/classificationController.php");
         ?>
     </main>
 
