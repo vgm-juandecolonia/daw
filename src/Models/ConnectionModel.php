@@ -7,7 +7,7 @@
                 $port = "3306";
                 $db = "clasificacion";
                 $user = "root";
-                $password = "";
+                $password = "root";
 
                 $dbcon = new PDO($system . ":host=" . $host . ":" . $port . ";dbname=" . $db, $user, $password);
                 $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

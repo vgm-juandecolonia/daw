@@ -26,10 +26,10 @@
                         <a class="nav-link" href="">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./views/raceView.html">Nueva carrera</a>
+                        <a class="nav-link" href="./src/views/raceView.html">Nueva carrera</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./controllers/resetPointsController.php">Reiniciar temorada</a>
+                        <a class="nav-link" href="./src/controllers/resetPointsController.php">Reiniciar temorada</a>
                     </li>
                 </ul>
             </div>
